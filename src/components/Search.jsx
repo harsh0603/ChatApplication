@@ -87,7 +87,8 @@ const Search = () => {
   return (
     <div className='search'>
     <div className='searchForm'>
-    <input type='text' placeholder='Find user' onKeyDown={handleKey} onChange={e=>setUsername(e.target.value)} value={username} />  {/*here the onDownKey is a function to handle the keyboard event */}
+    <input type='text' placeholder='Find user' onKeyDown={handleKey} 
+    onChange={e=>setUsername(e.target.value)} value={username} />  {/*here the onDownKey is a function to handle the keyboard event */}
     </div>
     {err && <span>User not found!</span>}
 

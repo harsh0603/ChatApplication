@@ -1,6 +1,6 @@
 import React from 'react'
 
-import homeLogo from '../images/Chatto.png'
+// import homeLogo from '../images/Chatto.png'
 import {signOut} from 'firebase/auth'
 import { auth } from '../firebase'
 import { useContext } from 'react'
@@ -10,7 +10,7 @@ const Navbar = () => {
   const {currentUser} = useContext(AuthContext)
   return (
     <div className='navbar'>
-    <img src={homeLogo}  className='homelogo' />
+    {/* <img src={homeLogo}  className='homelogo' /> */}
     <div className='user'>
 
     <img src={currentUser.photoURL} alt=''></img>
